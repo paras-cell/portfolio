@@ -1,0 +1,260 @@
+/* home.css */
+
+.content,
+.content-start {
+  max-width: 900px;
+  text-align: left;
+  height: 100%;
+}
+
+.my-div {
+  height: 0;
+  width: 40rem;
+  position: absolute;
+  top: 22%;
+  right: -5%;
+  box-shadow: 0 0 24px 5px #e99b63;
+  transform: rotate(-30deg);
+}
+
+
+.content-start {
+  max-width: 550px;
+  margin-bottom: 15px;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: comedown 4s forwards ease;
+}
+
+.img-cont {
+  height: 88%;
+  width: 40%;
+}
+
+.anime {
+  position: absolute;
+  top: 176px;
+  right: 270px;
+  animation: float 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.start-but {
+  opacity: 0;
+  transform: translateY(-150%);
+  animation: comeup 4.5s forwards ease;
+}
+
+.type-ef {
+  color: var(--tru-color);
+  border-right: solid 1.4px var(--tru-color);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.7s step-end infinite,
+    typing 3s steps(18) infinite alternate;
+}
+
+.connect {
+  display: block;
+  width: 19px;
+  height: 15px;
+  margin-right: 6px;
+}
+
+.connect-icon {
+  width: 140%;
+  height: 140%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow: 0 0 15px 5px #f44336bd;
+  cursor: pointer;
+}
+
+.hire-but {
+  margin-top: 25px;
+  height: 42px;
+  width: 97px;
+  background-color: var(--sec-color);
+  font-weight: 600;
+  color: white;
+  font-size: medium;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+  box-shadow: 0 0 15px 5px #f44336bd;
+
+}
+
+.know-me {
+  background: transparent;
+  border-color: var(--sec-color);
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 15px 5px transparent;
+
+}
+
+.know-me:hover {
+  box-shadow: 0 0 18px 12px #f4433673;
+}
+
+.blackback {
+  position: absolute;
+  box-shadow: 0 0 18px 7px black;
+  width: 167px;
+  right: 276px;
+  bottom: -150px;
+  height: 46px;
+  background: black;
+}
+
+/* Tablet and medium screens */
+@media screen and (max-width: 1024px) {
+
+  .content,
+  .content-start {
+    max-width: 95%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .my-div {
+    width: 25rem;
+    top: 20%;
+    right: -10%;
+    box-shadow: 0 0 20px 3px #e99b63;
+    transform: rotate(-20deg);
+  }
+
+  .content-start {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .img-cont {
+    width: 60%;
+    height: auto;
+  }
+
+  .anime {
+    top: 140px;
+    right: 20px;
+  }
+
+  .start-but {
+    margin-top: 20px;
+    width: 90px;
+    height: 38px;
+  }
+
+  .connect-icon {
+    width: 120%;
+    height: 120%;
+  }
+
+  .hire-but {
+    width: 80px;
+    height: 36px;
+    font-size: 0.9rem;
+    margin-right: 10px;
+  }
+
+  .blackback {
+    width: 130px;
+    right: 20px;
+    bottom: -100px;
+    height: 40px;
+  }
+}
+
+.type-eff{
+  display: inline-block;
+  width: 199px;
+}
+
+/* Mobile and small screens */
+@media screen and (max-width: 767px) {
+  .content-start {
+    max-width: 85%;
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+    bottom: -102px;
+
+  }
+
+  .type-eff{
+  display: inline-block;
+  width: 124px;
+}
+
+  .my-div {
+    width: 16rem;
+    top: 8%;
+    right: -15%;
+    box-shadow: 0 0 15px 3px #e99b63;
+    transform: rotate(-51deg);
+  }
+
+  .content-start {
+    transform: translateX(0);
+    animation: comedown 3s forwards ease;
+  }
+
+  .img-cont {
+    width: 80%;
+    height: auto;
+  }
+
+  .anime {
+    top: 46px;
+    right: 10px;
+
+  }
+
+  .start-but {
+    width: 80px;
+    height: 34px;
+    font-size: 0.8rem;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: -104px;
+    left: 120px;
+  }
+
+  .type-ef {
+    font-size: 0.9rem;
+  }
+
+  .connect-icon {
+    width: 110%;
+    height: 110%;
+  }
+
+  .hire-but {
+    width: 82px;
+    height: 32px;
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+
+  .know-me {
+    box-shadow: 0 0 12px 3px transparent;
+  }
+
+  .know-me:hover {
+    box-shadow: 0 0 15px 8px #f4433673;
+  }
+
+  .blackback {
+    width: 100px;
+    right: 10px;
+    bottom: -80px;
+    height: 36px;
+  }
+}

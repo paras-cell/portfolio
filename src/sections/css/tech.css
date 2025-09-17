@@ -1,0 +1,245 @@
+* {
+    backface-visibility: visible;
+}
+
+/* Banner and Slider - unchanged */
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .slider {
+    position: absolute;
+    width: 65px;
+    height: 68px;
+    top: 25%;
+    left: calc(50% - 40px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 2;
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(373px);
+}
+
+.banner .slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content styling - updated from second CSS */
+.banner .contentes {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1400px, 100vw);
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.banner .contentes h1 {
+    font-family: 'ICA Rubrik';
+    font-size: 7em;
+    line-height: 4.3em;
+    color: #ffffff;
+    position: relative;
+    left: 265px;
+}
+
+.banner .contentes .author {
+    position: relative;
+    bottom: -420px;
+    left: -809px;
+
+}
+
+.banner .contentes .author2 {
+    position: relative;
+    left: 800px;
+    top: 10px;
+
+}
+
+.banner .contentes h2 {
+    font-size: 3em;
+}
+
+.banner .contentes .model {
+    background-image: url("ninja.png");
+    height: 420px;
+    width: 415px;
+    position: absolute;
+    bottom: 45px;
+    left: 415px;
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
+    filter: drop-shadow(0 0 20px #5a5a5a);
+
+    /* Add animation */
+    animation: float 3s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(-.4deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+.blur-div {
+    width: 26%;
+    position: relative;
+    bottom: -166px;
+    left: -478px;
+    box-shadow: 0 0 18px 25px black;
+    z-index: 100;
+    animation: float 3s ease-in-out infinite;
+    transform-origin: center;
+
+}
+
+
+/* Media Queries */
+/* Tablet and medium screens */
+@media screen and (max-width: 1024px) {
+    .banner .slider {
+        width: 89px;
+        height: 115px;
+        left: calc(50% - 31px);
+        top: 32vh;
+
+
+    }
+
+    .banner .slider .item {
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(415px);
+    }
+
+    .banner .contentes h1 {
+        left: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 7em;
+        line-height: 119vh;
+    }
+
+    .banner .contentes .author {
+        left: 0;
+        bottom: 58vh;
+        text-align: center;
+    }
+
+    .banner .contentes .author2 {
+        left: 0;
+        top: 20px;
+        text-align: center;
+    }
+
+    .banner .contentes .model {
+        left: calc(50% - 207px);
+        bottom: 25vh;
+        width: 453px;
+        height: 538px;
+    }
+
+    .blur-div {
+        left: 323px;
+        bottom: 239px;
+        width: 40%;
+
+    }
+}
+
+/* Mobile and small screens */
+@media screen and (max-width: 767px) {
+    .banner .slider {
+        width: 65px;
+        height: 72px;
+        left: calc(50% - 32px);
+        top: 32vh;
+
+    }
+
+    .banner .slider .item {
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(182px);
+    }
+
+    .banner .contentes h1 {
+        font-size: 6vh;
+        line-height: 119vh;
+        left: 0;
+        text-align: center;
+    }
+
+    @keyframes autoRun {
+        from {
+            transform: perspective(1000px) rotateX(-27deg) rotateY(0deg);
+        }
+
+        to {
+            transform: perspective(1000px) rotateX(-27deg) rotateY(360deg);
+        }
+    }
+
+    .banner .contentes .author {
+        bottom: 58vh;
+        left: 16px;
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .banner .contentes .author2 {
+        left: -12px;
+        text-align: center;
+        font-size: 8px;
+        top: 10px;
+    }
+
+    .banner .contentes .model {
+        left: calc(50% - 123px);
+        bottom: 28vh;
+        width: 250px;
+        height: 280px;
+
+    }
+
+    .blur-div {
+        left: 86px;
+        bottom: 110px;
+        width: 54%;
+    }
+}

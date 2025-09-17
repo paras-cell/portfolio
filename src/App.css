@@ -1,0 +1,80 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: red;
+  --sec-color: #d13200;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: none;
+  overflow: visible;
+  scrollbar-width: none;
+}
+
+.back-vid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  mix-blend-mode: overlay;
+  min-width: 200%;
+}
+
+.back-vid-2 {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  mix-blend-mode: overlay;
+  min-width: 200%;
+
+}
+
+
+.section {
+  min-height: 97vh;
+  padding: 40px;
+  scroll-margin-top: 70px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Tablet and medium screens */
+@media screen and (max-width: 1024px) {
+
+  .back-vid,
+  .back-vid-2 {
+    min-width: 150%;
+  }
+
+  .section {
+    padding: 50px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Mobile and small screens */
+@media screen and (max-width: 767px) {
+
+  .back-vid,
+  .back-vid-2 {
+    min-width: 120%;
+  }
+
+  .section {
+    padding: 50px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

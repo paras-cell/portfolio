@@ -1,0 +1,30 @@
+/* base.css */
+
+/* Reset margins */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: medium;
+  }
+}
+
+/* Color variables */
+:root {
+  --primary-color: red;
+  --sec-color: #d13200;
+  --tru-color: #E64A19;
+}
+
+body {
+  overflow-x: hidden;
+}

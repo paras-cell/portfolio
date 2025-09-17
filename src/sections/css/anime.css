@@ -1,0 +1,318 @@
+animations.css
+
+ .auto-show-d,
+.auto-comeleft,
+.auto-comeright,
+.auto-show-up,
+.start-but,
+.anime,
+.content-start,
+.auto-blur {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+* {
+  backface-visibility: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Auto show animations */
+.auto-show-d {
+  animation: reveal-d  both;
+  animation-timeline: view(10% 30%);
+}
+
+.auto-comeleft {
+  animation: slideInFromLeft  both;
+  animation-timeline: view(90% 10%);
+}
+
+.auto-comeright {
+  animation: slideInFromRight both;
+  animation-timeline: view(80% 20%);
+}
+
+.auto-show-up {
+  animation: reveal-up both;
+  animation-timeline: view(80% 20%);
+} 
+
+@keyframes reveal-d {
+  0% {
+    opacity: 0;
+    scale: .85;
+    translate: 0 4rem;
+  }
+  37%,70%{
+    opacity: 1;
+    scale: 1;
+    translate: 0 0;
+  }
+  100% {
+    opacity: 0;
+    scale: .85;
+    translate: 0 4rem;
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    scale: .95;
+    translate: 0 -4rem;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomout {
+  from {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes comedown {
+  from {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes comeup {
+  from {
+    opacity: 0;
+    transform: translateY(150%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  70%, 100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(-.4deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+} 
+
+/* Tablet and medium screens */
+@media screen and (max-width: 1024px) {
+  .auto-show-d,
+  .auto-comeleft,
+  .auto-comeright,
+  .auto-show-up,
+  .start-but,
+  .anime,
+  .content-start,
+  .auto-blur {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+  }
+
+  /* Optionally reduce animation intensity for better performance */
+  @keyframes reveal-d {
+    0% {
+      opacity: 0;
+      scale: 0.9;
+      translate: 0 2rem;
+    }
+    37%, 70% {
+      opacity: 1;
+      scale: 1;
+      translate: 0 0;
+    }
+    100% {
+      opacity: 0;
+      scale: 0.9;
+      translate: 0 2rem;
+    }
+  }
+
+  @keyframes reveal-up {
+    from {
+      opacity: 0;
+      scale: 0.97;
+      translate: 0 -2rem;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+      translate: 0 0;
+    }
+  }
+
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(30%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+/* Mobile and small screens */
+@media screen and (max-width: 767px) {
+  .auto-show-d,
+  .auto-comeleft,
+  .auto-comeright,
+  .auto-show-up,
+  .start-but,
+  .anime,
+  .content-start,
+  .auto-blur {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+  }
+
+  /* Further reduce animations for mobile to avoid performance issues */
+  @keyframes reveal-d {
+    0% {
+      opacity: 0;
+      scale: 0.95;
+      translate: 0 1rem;
+    }
+    37%, 70% {
+      opacity: 1;
+      scale: 1;
+      translate: 0 0;
+    }
+    100% {
+      opacity: 0;
+      scale: 0.95;
+      translate: 0 1rem;
+    }
+  }
+
+  @keyframes reveal-up {
+    from {
+      opacity: 0;
+      scale: 0.98;
+      translate: 0 -1rem;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+      translate: 0 0;
+    }
+  }
+
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-8px) rotate(-0.2deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+}
