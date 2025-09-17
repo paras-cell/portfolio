@@ -20,7 +20,7 @@ body {
 
 .back-vid {
   position: fixed;
-  right: 0;
+  right: 30%;
   bottom: 0;
   z-index: -1;
   mix-blend-mode: overlay;
@@ -29,7 +29,7 @@ body {
 
 .back-vid-2 {
   position: fixed;
-  right: 0;
+  right: 30%;
   top: 0;
   z-index: -1;
   mix-blend-mode: overlay;
