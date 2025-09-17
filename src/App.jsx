@@ -21,12 +21,12 @@ function App() {
        : ( 
          <div className="background">
       <Nav />
-      {/* <video 
+      <video 
         className="back-vid" autoPlay loop muted playsInline src="/galaxy.mp4">
       </video>
       <video 
         className="back-vid-2" autoPlay loop muted playsInline src="/galaxy.mp4">
-      </video> */}
+      </video>
       <section id="home" className="section"><Home></Home></section>
       <section id="about" className="section"><About/></section>
       <section id="project" className="section"><Project/></section>
