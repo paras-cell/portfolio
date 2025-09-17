@@ -89,7 +89,7 @@
 }
 
 .banner .contentes .model {
-    background-image: url("ninja.png");
+    background-image: url("/hero.png");
     height: 420px;
     width: 415px;
     position: absolute;
