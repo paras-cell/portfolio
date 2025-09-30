@@ -20,8 +20,7 @@ function App() {
       {showWelcome ? <Welcome onFinish={() => setShowWelcome(false)} /> 
        : ( 
          <div className="background">
-          <Welcome/>
-      {/* <Nav />
+      <Nav />
       <video 
         className="back-vid" autoPlay loop muted playsInline src="/galaxy.mp4">
       </video>
@@ -32,7 +31,7 @@ function App() {
       <section id="about" className="section"><About/></section>
       <section id="project" className="section"><Project/></section>
       <section id="tech" className="section"><Tech/></section>
-      <section id="contact" className="section"><Contact/></section>  */}
+      <section id="contact" className="section"><Contact/></section> 
     </div> 
       )} 
     </>
