@@ -96,6 +96,7 @@
   height: 77%;
   margin: 77px 60px 38px 60px;
   gap: 25px;
+  color: #ffffff;
 }
 
 .form-input {
@@ -104,6 +105,7 @@
   border: 1px solid #72a1de81;
   background-color: transparent;
   padding-left: 15px;
+  color: white;
 }
 
 .form-text {
@@ -113,6 +115,7 @@
   border: 1px solid #72a1de81;
   background-color: transparent;
   padding: 15px;
+  color: white;
 }
 
 .form-but {
