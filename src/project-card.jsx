@@ -1,5 +1,5 @@
 import "./sections/css/project.css"
-function ProjectCard({ git,imgSrc, projectName, highlightText, description}) {
+function ProjectCard({site, git,imgSrc, projectName, highlightText, description}) {
   return (
     <div className="project-card">
       <div className="project-vidbox">
@@ -17,7 +17,7 @@ function ProjectCard({ git,imgSrc, projectName, highlightText, description}) {
             <i className="bx bx-link-external"></i> Deploy
           </button>
         </a>
-        <a href={git} target="_blank">
+        <a href={site} target="_blank">
           <button>
             <i className="bx bx-link-external"></i> GitHub
           </button>

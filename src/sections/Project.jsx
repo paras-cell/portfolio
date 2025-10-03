@@ -8,6 +8,7 @@ function Projects() {
 
       <ProjectCard
         imgSrc="/project1.png"
+        site="https://ecommerce-fullstack-frontend-tua5.onrender.com"
         git ="https://github.com/paras-cell/ecommerce-fullstack"
         projectName="E-COMMERCE Website"
         description="A fully responsive and user-friendly e-commerce platform that allows users to browse products, add items to the cart, and securely checkout."
@@ -15,14 +16,16 @@ function Projects() {
 
       <ProjectCard
         imgSrc="/portfolio.png"
-        git ="https://github.com/paras-cell/ecommerce-fullstack"
+        site="https://portfolio-paras-web.onrender.com"
+        git ="https://github.com/paras-cell/portfolio.git"
         projectName="Modern Portfolio Website"
         description="A sleek and modern portfolio designed to showcase personal projects, skills, and experience with interactive elements and smooth navigation."
       />
 
       <ProjectCard
         imgSrc="/project3.png"
-        git ="https://github.com/paras-cell/ecommerce-fullstack"
+        site="https://ai-assistant-frontend-1uuh.onrender.com"
+        git ="https://github.com/paras-cell/AI-assistant-.git"
         projectName="AI Assistant"
         description="An AI-powered assistant that helps users manage tasks, answer queries, and automate routine actions using natural language processing."
       />
