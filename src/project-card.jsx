@@ -12,12 +12,12 @@ function ProjectCard({site, git,imgSrc, projectName, highlightText, description}
         </h1>
         <p>{description}</p>
         <div style={{display:"flex",gap:"25px"}}>
-        <a href={git} target="_blank">
+        <a href={site} target="_blank">
           <button>
             <i className="bx bx-link-external"></i> Deploy
           </button>
         </a>
-        <a href={site} target="_blank">
+        <a href={git} target="_blank">
           <button>
             <i className="bx bx-link-external"></i> GitHub
           </button>
