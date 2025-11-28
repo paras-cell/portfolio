@@ -96,7 +96,7 @@ function Start() {
           >
             Hire Me
           </button>
-          <a href="/resume.pdf" download>
+          <a href="/Paras_Kumar_Resume.pdf" download>
             <button className="hire-but know-me">⇩ Resume</button>
           </a>
           </div>

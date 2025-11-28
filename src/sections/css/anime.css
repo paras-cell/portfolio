@@ -75,7 +75,7 @@ body {
 @keyframes slideInFromRight {
   from {
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(10%);
   }
   to {
     opacity: 1;
