@@ -1,6 +1,6 @@
 animations.css
 
- .auto-show-d,
+.auto-show-d,
 .auto-comeleft,
 .auto-comeright,
 .auto-show-up,
@@ -79,7 +79,7 @@ body {
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 }
 

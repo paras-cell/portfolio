@@ -169,12 +169,12 @@ function About() {
           </form>
         </div>
 
-        <div className="auto-comeleft card-about passion-card">
-          <h1>My Passion for Coding</h1>
+        <div className="auto-comeright card-about passion-card">
+          <h1>Let’s Build Something Amazing Together</h1>
           <p>
-            Coding excites me because it lets me solve problems and build things
-            from scratch. I love exploring new technologies and continuously
-            improving my skills to create impactful solutions.
+            ✨ Excited to connect and collaborate!
+             Let’s turn ideas into impactful projects together—your 
+             vision and my skills can create something truly remarkable.
           </p>
         </div>
       </div>

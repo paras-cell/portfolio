@@ -12,7 +12,7 @@ function About() {
           <p>
            I have completed Java and DSA courses and built and deployed many projects. Though I am a fresher, I am eager to learn and grow in the tech field.
           </p>
-          <img src="profile.jpg" alt="Grid 1" />
+          <img src="profile.jpeg" alt="Grid 1" />
         </div>
 
         <div className="auto-comeright card">

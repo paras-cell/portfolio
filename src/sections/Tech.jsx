@@ -4,7 +4,7 @@ import "./css/base.css";
 
 function Tech() {
   return (
-    <div className="auto-show-d banner">
+    <div className="auto-show-up banner">
       <div className="slider" style={{ '--quantity': 11 }}>
         <div className="item" style={{ '--position': 1 }}><img src="/css.png" alt=""/></div>
         <div className="item" style={{ '--position': 2 }}><img src="/html.png" alt=""/></div>

@@ -61,9 +61,12 @@
 }
 
 .card img{
-    width: 80%;
+    width: 66%;
     height: 50%;
     object-fit: cover;
+    position: relative;
+    top: 27px;
+    border-radius: 25px;
 }
 
 .card:hover{
