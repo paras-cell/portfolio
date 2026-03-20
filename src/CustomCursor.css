@@ -1,0 +1,48 @@
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--sec-color, #d13200); /* Orange/Red color */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  /* transform is handled solely by JS, so no transition on transform */
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+}
+
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--sec-color, #d13200);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  /* Remove transform from transition to fix the lagging/trailing effect */
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.custom-cursor-dot.hoverING {
+  width: 14px;
+  height: 14px;
+  background-color: #ff5722; /* Lighter orange on hover */
+}
+
+.custom-cursor-ring.hoverING {
+  width: 60px;
+  height: 60px;
+  border-color: #ff5722;
+  background-color: rgba(255, 87, 34, 0.1);
+}
+
+body {
+  cursor: none !important;
+}
+
+a, button, [role="button"], input, select, textarea {
+  cursor: none !important;
+}

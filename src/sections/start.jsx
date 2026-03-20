@@ -12,6 +12,7 @@ function Start() {
         <div className="my-div"></div>
         <Spline 
         className="anime"
+        style={{ pointerEvents: "none" }}
           scene="https://prod.spline.design/Cd65dnOaZQy-KUba/scene.splinecode"
         />
       </div>

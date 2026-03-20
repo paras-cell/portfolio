@@ -10,7 +10,7 @@ function Nav() {
   };
 
   useEffect(() => {
-    const sections = ["home", "about", "project", "tech", "contact"];
+    const sections = ["home", "about", "experience", "project", "services", "tech", "contact"];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -40,7 +40,7 @@ function Nav() {
     <nav className="cont-nav">
       <h2>Portfolio</h2>
       <ul className="nav-list">
-        {["Home", "About", "Project", "Tech", "Contact"].map((section) => (
+        {["Home", "About", "Experience", "Project", "Services", "Tech", "Contact"].map((section) => (
           <li
             key={section}
             className={`nav-item ${activeSection === section ? "active" : ""}`}

@@ -20,21 +20,16 @@ body {
 
 .back-vid {
   position: fixed;
-  right: -5%;
-  bottom: 0;
-  z-index: -1;
-  mix-blend-mode: overlay;
-  min-width: 200%;
-}
-
-.back-vid-2 {
-  position: fixed;
-  right: -5%;
   top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   z-index: -1;
-  mix-blend-mode: overlay;
-  min-width: 200%;
-
+  opacity: 0.6; /* Replaced expensive mix-blend-mode: overlay with simple opacity */
+  pointer-events: none;
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 
@@ -51,11 +46,6 @@ body {
 /* Tablet and medium screens */
 @media screen and (max-width: 1024px) {
 
-  .back-vid,
-  .back-vid-2 {
-    min-width: 150%;
-  }
-
   .section {
     padding: 50px 20px;
     flex-direction: column;
@@ -65,11 +55,6 @@ body {
 
 /* Mobile and small screens */
 @media screen and (max-width: 767px) {
-
-  .back-vid,
-  .back-vid-2 {
-    min-width: 120%;
-  }
 
   .section {
     padding: 50px 10px;

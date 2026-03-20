@@ -21,7 +21,13 @@ body {
   justify-content: center;
   z-index: 2000;
   color: white;
-  animation: reveal-up 3s ease-in-out 5s forwards;
+  transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1), transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.welcome-screen.fade-out {
+  opacity: 0;
+  transform: translateY(-50px);
+  pointer-events: none;
 }
 
 .icon_ {
@@ -31,25 +37,32 @@ body {
   box-shadow: 0 0 15px 5px #f44336bd;
   background-color: white;
   border-radius: 8px;
-  animation: comedown 3s forwards ease;
+  opacity: 0;
 }
 
+.icon-1 { animation: comedown 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.icon-2 { animation: comedown 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.icon-3 { animation: comedown 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
 .wel-text {
-  animation: slideInFromLeft 3s forwards ease;
+  opacity: 0;
+  animation: slideInFromLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
 }
 
 .wel-p {
-  animation: comeup 3s forwards ease;
+  opacity: 0;
+  animation: comeup 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
 }
 
 .animated-text {
   font-size: 2.5rem;
   font-weight: bold;
-  animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
+  animation: typing 2.5s steps(40, end) 0.5s forwards, blink 0.5s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
   color: var(--sec-color);
   border-right: 2px solid white;
+  width: 0; 
 }
 
 .cont-wel {
@@ -73,7 +86,7 @@ body {
 }
 
 @keyframes fadeOut {
-  form {
+  from {
     opacity: 1;
     visibility: visible;
   }
