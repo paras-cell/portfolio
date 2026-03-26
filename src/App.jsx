@@ -6,7 +6,7 @@ import Welcome from "./welcome.jsx";
 import About from "./sections/About.jsx";
 import Experience from "./sections/Experience.jsx";
 import Project from "./sections/Project.jsx";
-import Services from "./sections/Services.jsx";
+import Certificate from "./sections/Certificate.jsx";
 import Tech from "./sections/Tech.jsx";
 import Contact from "./sections/Contact.jsx";
 import CustomCursor from "./CustomCursor.jsx";
@@ -34,7 +34,7 @@ function App() {
             <section id="about" className="section"><About /></section>
             <section id="experience" className="section"><Experience /></section>
             <section id="project" className="section"><Project /></section>
-            <section id="services" className="section"><Services /></section>
+            <section id="certificate" className="section"><Certificate /></section>
             <section id="tech" className="section"><Tech /></section>
             <section id="contact" className="section"><Contact /></section>
           </div>

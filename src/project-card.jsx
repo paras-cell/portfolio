@@ -1,27 +1,21 @@
-import "./sections/css/project.css"
-function ProjectCard({site, git,imgSrc, projectName, highlightText, description}) {
+import "./sections/css/project.css";
+
+function ProjectCard({ imgSrc, site, git, projectName, description }) {
   return (
-    <div className="project-card">
-      <div className="project-vidbox">
-        <img src={imgSrc} />
+    <div className="project-display-card">
+      <div className="project-visual-box">
+        <img src={imgSrc} alt={projectName} />
       </div>
-      <div className="auto-comeleft project-info">
-        <h1>
-          {projectName.split(highlightText)[0]}
-          {projectName.split(highlightText)[1]}
-        </h1>
+      <div className="auto-comeleft project-details">
+        <h1>{projectName}</h1>
         <p>{description}</p>
-        <div style={{display:"flex",gap:"25px"}}>
-        <a href={site} target="_blank">
-          <button>
+        <div className="project-actions">
+          <a href={site} target="_blank" rel="noopener noreferrer" className="project-link-btn">
             <i className="bx bx-link-external"></i> Deploy
-          </button>
-        </a>
-        <a href={git} target="_blank">
-          <button>
-            <i className="bx bx-link-external"></i> GitHub
-          </button>
-        </a>
+          </a>
+          <a href={git} target="_blank" rel="noopener noreferrer" className="project-link-btn outline">
+             <i className="bx bxl-github"></i> GitHub
+          </a>
         </div>
       </div>
     </div>

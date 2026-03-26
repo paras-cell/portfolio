@@ -1,36 +1,104 @@
-import "./css/about.css";
-import "./css/base.css";
+import "./css/experience.css";
 
 function Experience() {
   return (
-    <div className="info-section">
-      <h1 className="auto-show-d section-title">EXPERIENCE & EDUCATION</h1>
-      <div className="info-cards">
-        <div className="auto-comeleft card">
-          <h1>Frontend Developer</h1>
-          <h3>Self-Taught & Projects</h3>
-          <p>
-            Developed numerous modern, responsive web applications utilizing React, HTML, CSS, JavaScript, and various modern libraries. Focused on building high-performance, accessible, and interactive user interfaces.
-          </p>
+    <section className="experience-section">
+      <h1 className="auto-show-d experience-title">
+        EXPERIENCE & EDUCATION
+      </h1>
+
+      <div className="experience-grid">
+
+        {/* 🔥 CARD 1 */}
+        <div className="auto-comeleft experience-card">
+          <div
+            className="experience-card-bg"
+            style={{ backgroundImage: "url('./backoff.png')" }}
+          ></div>
+
+          <div className="experience-card-content">
+            <span className="tag">Internship</span>
+            <h3>Aug 2023 - Present</h3>
+            <h2>MERN Stack Developer</h2>
+            <p>
+              Working on scalable enterprise applications at SoftSensor.ai.
+              Implemented features, fixed bugs, and optimized performance.
+            </p>
+            <div className="tech-tags">
+              <span>React</span>
+              <span>Node</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
         </div>
 
-        <div className="auto-show-d card">
-          <h1>Java & DSA Training</h1>
-          <h3>Completed Coursework</h3>
-          <p>
-            Mastered core programming concepts through comprehensive coursework in Java and Data Structures & Algorithms. Applied these concepts to build logical foundations for complex problem solving.
-          </p>
+        {/* 🔥 CARD 2 */}
+        <div className="auto-show-d experience-card">
+          <div
+            className="experience-card-bg"
+            style={{ backgroundImage: "url('./uiuxl.png')" }}
+          ></div>
+
+          <div className="experience-card-content">
+            <span className="tag">Frontend</span>
+            <h3>2022 - Present</h3>
+            <h2>UI / UX Specialist</h2>
+            <p>
+              Building modern UI with animations and interactive 3D experiences.
+            </p>
+            <div className="tech-tags">
+              <span>React</span>
+              <span>CSS</span>
+              <span>Tailwind</span>
+            </div>
+          </div>
         </div>
 
-        <div className="auto-comeright card">
-          <h1>Freelance Web Designer</h1>
-          <h3>Ongoing</h3>
-          <p>
-            Designing and developing portfolio sites and landing pages. Specialized in creating beautiful, smooth animations and integrating interactive 3D elements like Spline to deliver premium user experiences.
-          </p>
+        {/* 🔥 CARD 3 */}
+        <div className="auto-show-d experience-card">
+          <div
+            className="experience-card-bg"
+            style={{ backgroundImage: "url('./javadsa.png')" }}
+          ></div>
+
+          <div className="experience-card-content">
+            <span className="tag">Core Skills</span>
+            <h3>Certification</h3>
+            <h2>Java & DSA</h2>
+            <p>
+              Strong foundation in data structures and algorithms.
+            </p>
+            <div className="tech-tags">
+              <span>Java</span>
+              <span>DSA</span>
+            </div>
+          </div>
         </div>
+
+        {/* 🔥 CARD 4 */}
+        <div className="auto-comeright experience-card">
+          <div
+            className="experience-card-bg"
+            style={{ backgroundImage: "url('./backuni.png')" }}
+          ></div>
+
+          <div className="experience-card-content">
+            <span className="tag">Education</span>
+            <h3>2021 - 2025</h3>
+            <h2>B.Tech CSE</h2>
+            <p>
+              Focused on full-stack development and real-world projects.
+            </p>
+            <div className="tech-tags">
+              <span>OOP</span>
+              <span>DBMS</span>
+              <span>OS</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 }
 

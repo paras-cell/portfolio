@@ -5,36 +5,37 @@ import "./css/base.css";
 function Tech() {
   return (
     <div className="auto-show-up banner">
-      <div className="slider" style={{ '--quantity': 11 }}>
-        <div className="item" style={{ '--position': 1 }}><img src="/css.png" alt=""/></div>
-        <div className="item" style={{ '--position': 2 }}><img src="/html.png" alt=""/></div>
-        <div className="item" style={{ '--position': 3 }}><img src="/js.png" alt=""/></div>
-        <div className="item" style={{ '--position': 4 }}><img src="/react.png" alt=""/></div>
-        <div className="item" style={{ '--position': 5 }}><img src="/tailwind.png" alt=""/></div>
-        <div className="item" style={{ '--position': 6 }}><img src="/express.png" alt=""/></div>
-        <div className="item" style={{ '--position': 7 }}><img src="/spline.png" alt=""/></div>
-        <div className="item" style={{ '--position': 8 }}><img src="/nodejs.png" alt=""/></div>
-        <div className="item" style={{ '--position': 9 }}><img src="/mongodb.png" alt=""/></div>
-        <div className="item" style={{ '--position': 10 }}><img src="/github.png" alt=""/></div>
-        <div className="item" style={{ '--position': 11 }}><img src="/java.png" alt=""/></div>
+
+      {/* 🔥 HEADING */}
+      <h1 className="section-title tech-title">TECH STACK</h1>
+
+      {/* 🔝 TOP RING */}
+      <div className="slider slider-top" style={{ '--quantity': 6 }}>
+        <div className="item" style={{ '--position': 1 }}><img src="/css.png" /></div>
+        <div className="item" style={{ '--position': 2 }}><img src="/html.png" /></div>
+        <div className="item" style={{ '--position': 3 }}><img src="/js.png" /></div>
+        <div className="item" style={{ '--position': 4 }}><img src="/react.png" /></div>
+        <div className="item" style={{ '--position': 5 }}><img src="/tailwind.png" /></div>
+        <div className="item" style={{ '--position': 6 }}><img src="/express.png" /></div>
       </div>
-      <div className="contentes">
-        <h1>TECH STACK</h1>
-        <div className="author">
-           <h2>Core Skills</h2>
-           <p><b>Technologies I excel in and actively use</b></p>
+
+      {/* 🔽 BOTTOM RING */}
+      <div className="slider slider-bottom" style={{ '--quantity': 5 }}>
+        <div className="item" style={{ '--position': 1 }}><img src="/nodejs.png" /></div>
+        <div className="item" style={{ '--position': 2 }}><img src="/mongodb.png" /></div>
+        <div className="item" style={{ '--position': 3 }}><img src="/github.png" /></div>
+        <div className="item" style={{ '--position': 4 }}><img src="/java.png" /></div>
+        <div className="item" style={{ '--position': 5 }}><img src="/spline.png" /></div>
+      </div>
+
+      {/* 💎 CENTER ELEMENT */}
+      <div className="center-glow">
+        <div className="glass-core">
+          <h2>Full Stack</h2>
+          <p>MERN + Java + DSA</p>
         </div>
-        <div className=" author2">
-          <h2>Tech Stack</h2>
-          <p><b>Tools and frameworks I leverage daily</b></p>
-          <p>From front-end to back-end, </p>
-          <p>these are my go-to technologies</p>
-          <p>for building efficient and scalable applications.</p>
       </div>
-        
-        <div className="model"></div>
-        <div className="blur-div"></div>
-      </div>
+
     </div>
   );
 }
