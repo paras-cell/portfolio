@@ -55,7 +55,7 @@ function Experience() {
         </div>
 
         {/* 🔥 CARD 3 */}
-        <div className="auto-show-d experience-card">
+        <div className="autoright experience-card">
           <div
             className="experience-card-bg"
             style={{ backgroundImage: "url('./javadsa.png')" }}
